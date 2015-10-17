@@ -28,8 +28,6 @@ public class Player : MonoBehaviour {
     protected virtual void Update ()
     {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 		GetComponent<Rigidbody> ().velocity = new Vector3(Input.GetAxis("Horizontal"),0f,Input.GetAxis("Vertical")) * speed;
 		if (GetComponent<Rigidbody> ().velocity != Vector3.zero) 
 		{
@@ -37,12 +35,10 @@ public class Player : MonoBehaviour {
 		}
 
 	}
-=======
-=======
->>>>>>> origin/master
+
     protected virtual void FixedUpdate()
     {
-        transform.position += velocity * Time.fixedDeltaTime;
+       // transform.position += velocity * Time.fixedDeltaTime;
     }
->>>>>>> origin/master
+
 }
