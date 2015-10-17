@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Player : MonoBehaviour {
 
@@ -19,13 +18,13 @@ public class Player : MonoBehaviour {
     private readonly Vector3 rightDir = new Vector3(1, 0, 0);
 
 	// Use this for initialization
-	void Start ()
+	protected virtual void Start ()
     {
         speed = 5f;
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    protected virtual void Update ()
     {
         Vector3 dir = Vector3.zero;
 	    if (Input.GetKey(downKey))
@@ -47,7 +46,7 @@ public class Player : MonoBehaviour {
         velocity = dir.normalized * speed;
 	}
 
-    void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         transform.position += velocity * Time.fixedDeltaTime;
     }
