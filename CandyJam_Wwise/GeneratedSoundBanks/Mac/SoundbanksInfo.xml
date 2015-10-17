@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" SchemaVersion="10" SoundbankVersion="112">
+	<RootPaths>
+		<ProjectRoot>/Users/danielbraunstein/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/GitHub/CandyJam/CandyJam_Wwise/</ProjectRoot>
+		<SourceFilesRoot>/Users/danielbraunstein/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/GitHub/CandyJam/CandyJam_Wwise/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/danielbraunstein/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/GitHub/CandyJam/CandyJam_Wwise/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/danielbraunstein/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/GitHub/CandyJam/CandyJam_Wwise/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2984418482" Language="SFX">
+			<ShortName>CandyJam_Soundbank</ShortName>
+			<Path>CandyJam_Soundbank.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
