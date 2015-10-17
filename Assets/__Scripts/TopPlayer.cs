@@ -24,7 +24,6 @@ public class TopPlayer : Player {
 	{
 		base.Update ();
 
-
 		sight.transform.position = new Vector3 (transform.position.x, GameObject.Find("Bottom_Floor").transform.position.y + 0.6f , transform.position.z);
 
 
