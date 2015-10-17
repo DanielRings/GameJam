@@ -14,9 +14,9 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4072029455" Language="SFX">
-			<ShortName>New_SoundBank</ShortName>
-			<Path>New_SoundBank.bnk</Path>
+		<SoundBank Id="2984418482" Language="SFX">
+			<ShortName>CandyJam_Soundbank</ShortName>
+			<Path>CandyJam_Soundbank.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
