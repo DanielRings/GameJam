@@ -16,7 +16,6 @@ public class BotPlayer : Player {
         rightKey = KeyCode.D;
 
         numKeys = 0;
-        print(this.gameObject.name);
     }
 
     public void PickUpKey()
