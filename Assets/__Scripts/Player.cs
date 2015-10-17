@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Player : MonoBehaviour {
 
@@ -13,42 +12,34 @@ public class Player : MonoBehaviour {
 
     private Vector3 velocity;
 
-    private readonly Vector3 upDir = new Vector3(0, 0, 1);
-    private readonly Vector3 downDir = new Vector3(0, 0, -1);
-    private readonly Vector3 leftDir = new Vector3(-1, 0, 0);
-    private readonly Vector3 rightDir = new Vector3(1, 0, 0);
+    private readonly Vector3 upDir = new Vector3(1, 0, 0);
+    private readonly Vector3 downDir = new Vector3(-1, 0, 0);
+    private readonly Vector3 leftDir = new Vector3(0, 0, 1);
+    private readonly Vector3 rightDir = new Vector3(0, 0, -1);
 
 	// Use this for initialization
-	void Start ()
+	protected virtual void Start ()
     {
         speed = 5f;
-	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-        Vector3 dir = Vector3.zero;
-	    if (Input.GetKey(downKey))
-        {
-            dir += downDir;
-        }
-        if (Input.GetKey(upKey))
-        {
-            dir += upDir;
-        }
-        if (Input.GetKey(leftKey))
-        {
-            dir += leftDir;
-        }
-        if (Input.GetKey(rightKey))
-        {
-            dir += rightDir;
-        }
-        velocity = dir.normalized * speed;
+		velocity = new Vector3 (0,0,1);
 	}
 
-    void FixedUpdate()
+    // Update is called once per frame
+    protected virtual void Update ()
+    {
+
+<<<<<<< HEAD
+		GetComponent<Rigidbody> ().velocity = new Vector3(Input.GetAxis("Horizontal"),0f,Input.GetAxis("Vertical")) * speed;
+		if (GetComponent<Rigidbody> ().velocity != Vector3.zero) 
+		{
+			transform.rotation = Quaternion.LookRotation (GetComponent<Rigidbody> ().velocity)* Quaternion.Euler(0, -90, 0);
+		}
+
+	}
+=======
+    protected virtual void FixedUpdate()
     {
         transform.position += velocity * Time.fixedDeltaTime;
     }
+>>>>>>> origin/master
 }
