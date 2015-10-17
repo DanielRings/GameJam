@@ -3,6 +3,9 @@
 public class Player : MonoBehaviour {
 
     public float speed;
+	public string HorizontalAxis;
+	public string VerticalAxis;
+
     public KeyCode upKey;
     public KeyCode downKey;
     public KeyCode leftKey;
@@ -28,11 +31,12 @@ public class Player : MonoBehaviour {
     protected virtual void Update ()
     {
 
-		GetComponent<Rigidbody> ().velocity = new Vector3(Input.GetAxis("Horizontal"),0f,Input.GetAxis("Vertical")) * speed;
+		GetComponent<Rigidbody> ().velocity = new Vector3(Input.GetAxis(HorizontalAxis),0f,Input.GetAxis(VerticalAxis)) * speed;
 		if (GetComponent<Rigidbody> ().velocity != Vector3.zero) 
 		{
 			transform.rotation = Quaternion.LookRotation (GetComponent<Rigidbody> ().velocity)* Quaternion.Euler(0, -90, 0);
 		}
+
 
 	}
 
@@ -40,5 +44,9 @@ public class Player : MonoBehaviour {
     {
        // transform.position += velocity * Time.fixedDeltaTime;
     }
+
+	protected virtual void Action()
+	{
+	}
 
 }
