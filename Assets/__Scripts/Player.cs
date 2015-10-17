@@ -4,12 +4,14 @@ using System.Collections;
 public class Player : MonoBehaviour {
 
     public float speed;
+    public KeyCode upKey;
+    public KeyCode downKey;
+    public KeyCode leftKey;
+    public KeyCode rightKey;
 
     public bool ____________________;
 
     private Vector3 velocity;
-
-    private Direction direction;
 
     private readonly Vector3 upDir = new Vector3(0, 0, 1);
     private readonly Vector3 downDir = new Vector3(0, 0, -1);
@@ -19,27 +21,26 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        // speed = 1f;
-        direction = Direction.Up;
+        speed = 5f;
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
         Vector3 dir = Vector3.zero;
-	    if (Input.GetKey(KeyCode.DownArrow))
+	    if (Input.GetKey(downKey))
         {
             dir += downDir;
         }
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(upKey))
         {
             dir += upDir;
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(leftKey))
         {
             dir += leftDir;
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(rightKey))
         {
             dir += rightDir;
         }
