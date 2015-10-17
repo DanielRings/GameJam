@@ -1,6 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8BD95FE3-A183-406D-AE63-82F0A2FB9D1D}" SchemaVersion="69">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{8BD95FE3-A183-406D-AE63-82F0A2FB9D1D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8BD95FE3-A183-406D-AE63-82F0A2FB9D1D}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Candy_Jam_Test_Ambience" ID="{3AF8A4AF-B47B-4096-847D-60DD08B517AF}" ShortID="40209145">
+					<PropertyList>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2.9"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A441955F-B401-402A-93AC-7A3DCC962FA0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A70561AA-2370-458C-B744-4F6AF585A40C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Ambience_1_1" ID="{A6960472-34B1-4035-80CA-F34C028939DC}" ShortID="474917503" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A441955F-B401-402A-93AC-7A3DCC962FA0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A70561AA-2370-458C-B744-4F6AF585A40C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience_1_1" ID="{2B944D2F-8370-4B62-B949-75E552DB91BB}" ShortID="360752031">
+									<Language>SFX</Language>
+									<AudioFile>Ambience_1_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience_1_1" ID="{2B944D2F-8370-4B62-B949-75E552DB91BB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambience_1_2" ID="{33464EBE-70E8-4B6F-8A3C-CBE04E018E4D}" ShortID="112240478" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A441955F-B401-402A-93AC-7A3DCC962FA0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A70561AA-2370-458C-B744-4F6AF585A40C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience_1_2" ID="{51777EB7-6903-4D35-9087-42E5A6D90EDA}" ShortID="582891130">
+									<Language>SFX</Language>
+									<AudioFile>Ambience_1_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience_1_2" ID="{51777EB7-6903-4D35-9087-42E5A6D90EDA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambience_1_3" ID="{BBAC57D9-60E3-4063-A4EC-F93972ABE3A0}" ShortID="221905699" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A441955F-B401-402A-93AC-7A3DCC962FA0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A70561AA-2370-458C-B744-4F6AF585A40C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience_1_3" ID="{6005EFA1-481E-405C-8ECA-832D98BF1E7C}" ShortID="671168793">
+									<Language>SFX</Language>
+									<AudioFile>Ambience_1_3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience_1_3" ID="{6005EFA1-481E-405C-8ECA-832D98BF1E7C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambience_1_4" ID="{640F1A42-441F-4785-94B1-75F0A25B8564}" ShortID="968799173" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A441955F-B401-402A-93AC-7A3DCC962FA0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A70561AA-2370-458C-B744-4F6AF585A40C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience_1_4" ID="{918427F1-44F6-4DA3-861E-0472BC836599}" ShortID="216850748">
+									<Language>SFX</Language>
+									<AudioFile>Ambience_1_4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience_1_4" ID="{918427F1-44F6-4DA3-861E-0472BC836599}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambience_1_5" ID="{E0B15525-1FFF-4AF2-9E1B-43D0A42EBEE0}" ShortID="981533240" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A441955F-B401-402A-93AC-7A3DCC962FA0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A70561AA-2370-458C-B744-4F6AF585A40C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience_1_5" ID="{C8C75531-E7BA-4D6E-9C1E-4280D6C02C7C}" ShortID="846190521">
+									<Language>SFX</Language>
+									<AudioFile>Ambience_1_5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience_1_5" ID="{C8C75531-E7BA-4D6E-9C1E-4280D6C02C7C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

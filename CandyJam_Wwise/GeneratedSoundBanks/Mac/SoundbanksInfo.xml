@@ -14,9 +14,39 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
+		<SoundBank Id="1747296476" Language="SFX">
+			<ShortName>CandyJam</ShortName>
+			<Path>CandyJam.bnk</Path>
+		</SoundBank>
 		<SoundBank Id="2984418482" Language="SFX">
-			<ShortName>CandyJam_Soundbank</ShortName>
-			<Path>CandyJam_Soundbank.bnk</Path>
+			<ShortName>CandyJam_SoundBank</ShortName>
+			<Path>CandyJam_SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1648170995" Name="CandyJam_Ambience_0_Start"/>
+				<Event Id="75572273" Name="CandyJam_Ambience_0_Stop"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="216850748" Language="SFX">
+					<ShortName>Ambience_1_4.wav</ShortName>
+					<Path>SFX/Ambience_1_4_DDC98EF4.wem</Path>
+				</File>
+				<File Id="360752031" Language="SFX">
+					<ShortName>Ambience_1_1.wav</ShortName>
+					<Path>SFX/Ambience_1_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="582891130" Language="SFX">
+					<ShortName>Ambience_1_2.wav</ShortName>
+					<Path>SFX/Ambience_1_2_DDC98EF4.wem</Path>
+				</File>
+				<File Id="671168793" Language="SFX">
+					<ShortName>Ambience_1_3.wav</ShortName>
+					<Path>SFX/Ambience_1_3_DDC98EF4.wem</Path>
+				</File>
+				<File Id="846190521" Language="SFX">
+					<ShortName>Ambience_1_5.wav</ShortName>
+					<Path>SFX/Ambience_1_5_DDC98EF4.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

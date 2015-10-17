@@ -42,6 +42,25 @@
 						<Value Platform="VitaHW">GeneratedSoundBanks\VitaHW</Value>
 					</ValueList>
 				</Property>
+				<Property Name="GlobalVoiceInstancesLimit" Type="int16">
+					<ValueList>
+						<Value Platform="Linux">256</Value>
+						<Value Platform="WindowsPhone">256</Value>
+						<Value Platform="XboxOne">256</Value>
+						<Value Platform="VitaSW">256</Value>
+						<Value Platform="Windows">256</Value>
+						<Value Platform="Wii">256</Value>
+						<Value Platform="WiiUSW">256</Value>
+						<Value Platform="Xbox360">256</Value>
+						<Value Platform="3DS">256</Value>
+						<Value Platform="PS3">256</Value>
+						<Value Platform="iOS">256</Value>
+						<Value Platform="PS4">256</Value>
+						<Value Platform="Mac">256</Value>
+						<Value Platform="Android">256</Value>
+						<Value Platform="VitaHW">256</Value>
+					</ValueList>
+				</Property>
 				<Property Name="IsPlatformDisplayed" Type="bool">
 					<ValueList>
 						<Value Platform="Linux">True</Value>
@@ -61,7 +80,9 @@
 						<Value Platform="VitaHW">False</Value>
 					</ValueList>
 				</Property>
-				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
+				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
+				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
+				<Property Name="SoundBankHeaderFilePath" Type="string" Value="..\..\StreamingAssets\"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
 						<Value Platform="Linux">GeneratedSoundBanks\Linux\</Value>
@@ -157,8 +178,31 @@
 						<Value Platform="VitaHW"></Value>
 					</ValueList>
 				</Property>
+				<Property Name="VolumeThreshold" Type="Real64">
+					<ValueList>
+						<Value Platform="Linux">-80</Value>
+						<Value Platform="WindowsPhone">-80</Value>
+						<Value Platform="XboxOne">-80</Value>
+						<Value Platform="VitaSW">-80</Value>
+						<Value Platform="Windows">-80</Value>
+						<Value Platform="Wii">-80</Value>
+						<Value Platform="WiiUSW">-80</Value>
+						<Value Platform="Xbox360">-80</Value>
+						<Value Platform="3DS">-80</Value>
+						<Value Platform="PS3">-80</Value>
+						<Value Platform="iOS">-80</Value>
+						<Value Platform="PS4">-80</Value>
+						<Value Platform="Mac">-80</Value>
+						<Value Platform="Android">-80</Value>
+						<Value Platform="VitaHW">-80</Value>
+					</ValueList>
+				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2014.1|Build=5179|VersionName=v2014.1.1|Config=Release"/>
 			</PropertyList>
+			<MiscSettings>
+				<MiscSettingEntry Name="Cache"><![CDATA[.cache]]></MiscSettingEntry>
+				<MiscSettingEntry Name="Originals"><![CDATA[Originals]]></MiscSettingEntry>
+			</MiscSettings>
 			<SharedValues>
 				<SharedPropertyList ClassName="AudioSource" PluginType="0" CompanyID="1" PluginID="0">
 					<PropertyList>

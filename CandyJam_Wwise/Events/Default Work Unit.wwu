@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{35CB18CA-4CE0-4F69-969C-738228B9A7C4}" SchemaVersion="69">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{35CB18CA-4CE0-4F69-969C-738228B9A7C4}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{35CB18CA-4CE0-4F69-969C-738228B9A7C4}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="CandyJam_Ambience_0_Start" ID="{7164AFFF-E63C-4A6F-85D1-E62139699594}">
+					<ChildrenList>
+						<Action Name="Play" ID="{9763FB51-EEAD-4050-9A4A-88C50B666CD9}" ShortID="729240521" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B63E358F-88F9-4C27-9412-C449B20A4897}" Global="false">
+									<ObjectRef Name="Candy_Jam_Test_Ambience" ID="{3AF8A4AF-B47B-4096-847D-60DD08B517AF}" WorkUnitID="{8BD95FE3-A183-406D-AE63-82F0A2FB9D1D}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="CandyJam_Ambience_0_Stop" ID="{DFF47857-7198-43A4-8B57-F451A2180224}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
