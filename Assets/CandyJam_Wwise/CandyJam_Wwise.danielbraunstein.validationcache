@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="69">
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Attenuations\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\CandyJam_Wwise.wproj" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Conversion Settings\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Conversion Settings\Factory Conversion Settings.wwu" DateLow="957552640" DateHigh="30408285"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Effects\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Effects\Factory Altiverb - Outdoor and More.wwu" DateLow="957552640" DateHigh="30408285"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Effects\Factory Auro Headphone.wwu" DateLow="957552640" DateHigh="30408285"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Effects\Factory Effects.wwu" DateLow="957552640" DateHigh="30408285"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Effects\Factory McDSP Effects.wwu" DateLow="977552640" DateHigh="30408285"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Events\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Game Parameters\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Mixing Sessions\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Modulators\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Presets\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Queries\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Queries\Factory Queries.wwu" DateLow="957552640" DateHigh="30408285"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\SoundBanks\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\States\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Switches\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+	<ValidationCacheItem File="Y:\GitHub\CandyJam\Assets\CandyJam_Wwise\Triggers\Default Work Unit.wwu" DateLow="2536003200" DateHigh="30476425"/>
+</ValidationCache>
