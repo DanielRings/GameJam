@@ -7,7 +7,7 @@ public class TopPlayer : Player {
 	public int ammo = 1;
 	public GameObject bullet; 
 	public GameObject targeting_sight ;
-	public KeyCode button = KeyCode.Space;
+	public string button = "Fire1";
 	public GameObject sight ;
 	public Texture txtr;
 	public Texture original;
@@ -48,7 +48,7 @@ public class TopPlayer : Player {
 			Seagull_gui.S.GetComponent<GUITexture>().texture = original;
 		}
 
-		if (Input.GetKeyDown (button)) 
+		if (Input.GetAxis(button)> 0 ) 
 		{
 			Action();
 		}
