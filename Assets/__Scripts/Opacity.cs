@@ -2,11 +2,6 @@
 using System.Collections;
 
 public class Opacity : MonoBehaviour {
-
-    void Start()
-    {
-         
-    }
     
     void OnTriggerEnter(Collider col)
     {
