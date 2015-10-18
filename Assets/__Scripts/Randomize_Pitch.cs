@@ -22,7 +22,7 @@ using System.Collections;
 		Vector3 velocity = gameObject.GetComponentInParent<Rigidbody> ().velocity;
 		if (velocity.x != 0 || velocity.z != 0) 
 		{
-			AudioClip audio = GetComponent<AudioSource>();
+			AudioSource audio = GetComponent<AudioSource>();
 			audio.pitch = Random.Range(1.0f - pitchMod, 1.0f + pitchMod);
 			audio.volume = Random.Range(footAudioVol - volumeMod, footAudioVol + volumeMod);
 			if(!audio.isPlaying)
