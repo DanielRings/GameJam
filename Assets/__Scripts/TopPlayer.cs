@@ -11,12 +11,17 @@ public class TopPlayer : Player {
 	public GameObject sight ;
 	public Texture txtr;
 	public Texture original;
+    public float cooldown;
+
+    public bool _______________;
 
 	private int counter = 0;
+    private float time;
 
 	public void Awake()
 	{
 		S = this;
+        time = Time.time;
 	}
 
     // Use this for initialization
@@ -66,6 +71,9 @@ public class TopPlayer : Player {
 	{
 		if (ammo > 0) 
 		{
+            float t = Time.time;
+            if (t - time < cooldown) return;
+            time = t;
 			GameObject Bomb = Instantiate (bullet) as GameObject;
 			ammo--;
 			Seagull_gui.S.GetComponent<GUITexture>().texture = txtr;
