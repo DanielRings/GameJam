@@ -2,6 +2,7 @@
 
 public class TopPlayer : Player {
 
+    public static TopPlayer S;
 
 	public int ammo = 5;
 	public GameObject bullet; 
@@ -12,6 +13,7 @@ public class TopPlayer : Player {
     // Use this for initialization
     protected override void Start () {
         base.Start();
+        S = this;
         upKey = KeyCode.UpArrow;
         downKey = KeyCode.DownArrow;
         leftKey = KeyCode.LeftArrow;

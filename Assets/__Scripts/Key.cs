@@ -5,10 +5,10 @@ public class Key : MonoBehaviour {
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "Left_S")
+        if (col.gameObject == BotPlayer.S.gameObject)
         {
-            col.gameObject.GetComponent<BotPlayer>().PickUpKey();
-            Destroy(this.gameObject);
+            BotPlayer.S.PickUpKey();
+            Destroy(gameObject);
         }
     }
 }

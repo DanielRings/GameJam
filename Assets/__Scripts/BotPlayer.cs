@@ -2,6 +2,8 @@
 
 public class BotPlayer : Player {
 
+    public static BotPlayer S;
+
     public bool _____________________;
 
     private int numKeys;
@@ -10,6 +12,7 @@ public class BotPlayer : Player {
     protected override void Start()
     {
         base.Start();
+        S = this;
         upKey = KeyCode.W;
         downKey = KeyCode.S;
         leftKey = KeyCode.A;
@@ -21,5 +24,15 @@ public class BotPlayer : Player {
     public void PickUpKey()
     {
         numKeys++;
+    }
+
+    public bool HasKeys(int num)
+    {
+        return numKeys >= num;
+    }
+
+    public void UseKeys(int num)
+    {
+        numKeys -= num;
     }
 }
