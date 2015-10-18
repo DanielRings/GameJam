@@ -23,8 +23,8 @@ public class AoE : MonoBehaviour {
 	void OnCollisionEnter(Collision col)
 	{
 		if (col.gameObject.CompareTag ("Player")) {
-			Destroy (col.gameObject);
-
+			//Destroy (col.gameObject);
+			col.gameObject.SetActive(false);
 		} 
 		else 
 		{
