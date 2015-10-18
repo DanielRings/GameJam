@@ -9,12 +9,15 @@ using System.Collections;
 	public float footAudioVol = 1.0f;
 	public float volumeMod = 0.05f;
 	public float pitchMod = 0.05f;
-	public AudioClip audio;
+	public AudioClip audio2;
+	public AudioSource audio;
 
 
 	// Use this for initialization
 	void Start () {
 		
+		audio = GetComponent<AudioSource>();
+		audio.clip = audio2;
 	}
 	
 	// Update is called once per frame
@@ -22,11 +25,11 @@ using System.Collections;
 		Vector3 velocity = gameObject.GetComponentInParent<Rigidbody> ().velocity;
 		if (velocity.x != 0 || velocity.z != 0) 
 		{
-			AudioSource audio = GetComponent<AudioSource>();
 			audio.pitch = Random.Range(1.0f - pitchMod, 1.0f + pitchMod);
 			audio.volume = Random.Range(footAudioVol - volumeMod, footAudioVol + volumeMod);
 			if(!audio.isPlaying)
 			{
+				print("hit");
 				audio.Play();
 				audio.Play(13025);
 			}
