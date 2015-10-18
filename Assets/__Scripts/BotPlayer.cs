@@ -22,6 +22,7 @@ public class BotPlayer : Player {
         rightKey = KeyCode.D;
 
         lives = 3;
+		LivesGUI.S.GetComponent<GUIText> ().text = "x " + lives;
 
         numKeys = 0;
 		KeyGUI.S.GetComponent<GUIText> ().text = "x " + numKeys.ToString ();
@@ -47,6 +48,7 @@ public class BotPlayer : Player {
     public void loseLife()
     {
         lives--;
+		LivesGUI.S.GetComponent<GUIText> ().text = "x " + lives;
         if(lives <= 0)
         {
             lives = 3;

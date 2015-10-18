@@ -17,6 +17,7 @@ public class CameraFollow : MonoBehaviour {
 	                                              target.transform.position.y + yOffset,
 	                                              target.transform.position.z + zOffset);
 			this.transform.position = Vector3.Lerp (transform.position, newPos, smooth * Time.deltaTime);
+
 		} 
 		else if (Input.GetKeyDown (KeyCode.Return)) {
 			//deal with Cutscene
@@ -28,6 +29,7 @@ public class CameraFollow : MonoBehaviour {
 				GameObject gui = GameObject.Find("TutGUI");
 				gui.SetActive(false);
 			}
+			else flag = false;
 		}
 
 
