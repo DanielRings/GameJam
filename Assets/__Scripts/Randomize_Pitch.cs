@@ -19,7 +19,7 @@ using System.Collections;
 	// Update is called once per frame
 	void Update () {
 		Vector3 velocity = gameObject.GetComponentInParent<Rigidbody> ().velocity;
-		if (velocity.x != 0 && velocity.z != 0) 
+		if (velocity.x != 0 || velocity.z != 0) 
 		{
 			AudioSource audio = GetComponent<AudioSource>();
 			audio.pitch = Random.Range(1.0f - pitchMod, 1.0f + pitchMod);
@@ -27,7 +27,7 @@ using System.Collections;
 			if(!audio.isPlaying)
 			{
 				audio.Play();
-				audio.Play(11025);
+				audio.Play(13025);
 			}
 		}
 	}
