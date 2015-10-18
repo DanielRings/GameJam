@@ -2,6 +2,11 @@
 using System.Collections;
 
 public class Opacity : MonoBehaviour {
+
+    void Start()
+    {
+         
+    }
     
     void OnTriggerEnter(Collider col)
     {
@@ -25,14 +30,14 @@ public class Opacity : MonoBehaviour {
     {
         if (objs.transform.childCount > 0)
         {
-            foreach(var meshRenderer in objs.transform.GetComponentsInChildren<MeshRenderer>())
+            for(int i = 0; i < objs.transform.childCount; ++i)
             {
-                meshRenderer.enabled = enable;
+                objs.transform.GetChild(i).gameObject.SetActive(enable);
             }
         }
         else
         {
-            objs.GetComponent<MeshRenderer>().enabled = enable;
+            objs.SetActive(enable);
         }
     }
 }
