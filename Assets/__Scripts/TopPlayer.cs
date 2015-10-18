@@ -4,11 +4,17 @@ public class TopPlayer : Player {
 
     public static TopPlayer S;
 
-	public int ammo = 5;
+	public int ammo = 1;
 	public GameObject bullet; 
 	public GameObject targeting_sight ;
 	public KeyCode button = KeyCode.Space;
 	public GameObject sight ;
+
+
+	public void Awake()
+	{
+		S = this;
+	}
 
     // Use this for initialization
     protected override void Start () {
@@ -36,11 +42,20 @@ public class TopPlayer : Player {
 		}
 	}
 
+	void OnCollisionEnter(Collision col)
+	{
+		if (col.gameObject.CompareTag ("Ammo")) {
+			ammo++;
+			col.gameObject.SetActive(false);
+		}
+	}
+
 	protected override void Action()
 	{
 		if (ammo > 0) 
 		{
 			GameObject Bomb = Instantiate (bullet) as GameObject;
+			ammo--;
 			Bomb.transform.position = new Vector3 (transform.position.x, transform.position.y - 3, transform.position.z);
             Bomb.GetComponent<Rigidbody>().velocity = new Vector3(0,-30,0);
 		}
