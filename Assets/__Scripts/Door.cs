@@ -27,7 +27,7 @@ public class Door : MonoBehaviour {
 
     void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.Tab))
+        if (playerInRange && (Input.GetAxis("Fire2") > 0))
         {
             if (BotPlayer.S.HasKeys(keysRequired))
             {

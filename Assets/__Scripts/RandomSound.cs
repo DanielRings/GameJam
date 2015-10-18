@@ -21,7 +21,7 @@ public class RandomSound : MonoBehaviour {
 	
 
 
-		if (Input.GetKeyDown(KeyCode.Space) && TopPlayer.S.ammo > 0 ) {
+		if ((Input.GetAxis("Fire1") > 0 ) && TopPlayer.S.ammo > 0 ) {
 			number = Random.Range (0, 3);
 			source.clip = birds [number];
 
