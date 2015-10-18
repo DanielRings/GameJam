@@ -2,6 +2,7 @@
 
 public class Player : MonoBehaviour {
 
+	public Animator anim;
     public float speed;
 	public string HorizontalAxis;
 	public string VerticalAxis;
@@ -23,6 +24,7 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	protected virtual void Start ()
     {
+		anim = GetComponent<Animator> ();
         speed = 5f;
 		velocity = new Vector3 (0,0,1);
 	}
@@ -30,12 +32,13 @@ public class Player : MonoBehaviour {
     // Update is called once per frame
     protected virtual void Update ()
     {
-
 		GetComponent<Rigidbody> ().velocity = new Vector3(Input.GetAxis(HorizontalAxis),0f,Input.GetAxis(VerticalAxis)) * speed;
 		if (GetComponent<Rigidbody> ().velocity != Vector3.zero) 
 		{
+			anim.SetBool ("Move", true);
 			transform.rotation = Quaternion.LookRotation (GetComponent<Rigidbody> ().velocity)* Quaternion.Euler(0, -90, 0);
 		}
+		else anim.SetBool ("Move", false);
 
 
 	}

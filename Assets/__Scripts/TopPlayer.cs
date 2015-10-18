@@ -2,6 +2,7 @@
 
 public class TopPlayer : Player {
 
+
 	public int ammo = 5;
 	public GameObject bullet; 
 	public GameObject targeting_sight ;
