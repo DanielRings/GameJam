@@ -1,33 +1,27 @@
 fileFormatVersion: 2
-guid: c790faf6c676f0946af900a54863ac48
-timeCreated: 1445202399
+guid: 6717d5331b1716549943dac737e8ba6e
+timeCreated: 1445203473
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: Cannon
-    100002: //RootNode
-    100004: Fuse
-    100006: Wheel1
-    100008: Wheel2
-    400000: Cannon
-    400002: //RootNode
-    400004: Fuse
-    400006: Wheel1
-    400008: Wheel2
-    2300000: Cannon
-    2300002: Fuse
-    2300004: Wheel1
-    2300006: Wheel2
-    3300000: Cannon
-    3300002: Fuse
-    3300004: Wheel1
-    3300006: Wheel2
-    4300000: Wheel2
-    4300002: Wheel1
-    4300004: Cannon
-    4300006: Fuse
-    9500000: //RootNode
+    100000: //RootNode
+    100002: Cylinder001
+    100004: Cylinder002
+    100006: Cylinder003
+    400000: //RootNode
+    400002: Cylinder001
+    400004: Cylinder002
+    400006: Cylinder003
+    2300000: Cylinder001
+    2300002: Cylinder002
+    2300004: Cylinder003
+    3300000: Cylinder001
+    3300002: Cylinder002
+    3300004: Cylinder003
+    4300000: Cylinder001
+    4300002: Cylinder002
+    4300004: Cylinder003
   materials:
     importMaterials: 1
     materialName: 0
@@ -86,7 +80,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
