@@ -8,18 +8,17 @@ public class AoE : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (counter < 1)
-			{
-			Destroy (this.gameObject);
-			}
+        {
+            Destroy (this.gameObject);
+		}
 		else counter--;
-	}
+    }
 
 
 	void OnCollisionEnter(Collision col)
-	{
-		if (col.gameObject.CompareTag ("Player")) {
+    {
+        if (col.gameObject.CompareTag ("Player")) {
             BotPlayer.S.loseLife();
 		}
-		counter = 15;
 	}
 }
