@@ -3,10 +3,9 @@ using System.Collections;
 
 public class Bomb : MonoBehaviour {
 
+	public GameObject AoE;
+
     public bool _________________;
-	public GameObject AoE; 
-
-
 
     void OnCollisionEnter(Collision col)
     {
