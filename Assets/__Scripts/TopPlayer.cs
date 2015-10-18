@@ -19,6 +19,9 @@ public class TopPlayer : Player {
     // Use this for initialization
     protected override void Start () {
         base.Start();
+
+		Seagull_gui.S.GetComponent<GUIText>().text = "x " + ammo.ToString() ;
+
         S = this;
         upKey = KeyCode.UpArrow;
         downKey = KeyCode.DownArrow;
@@ -32,7 +35,7 @@ public class TopPlayer : Player {
 	protected override void Update()
 	{
 		base.Update ();
-
+		Seagull_gui.S.GetComponent<GUIText>().text = "x " + ammo.ToString() ;
 		sight.transform.position = new Vector3 (transform.position.x, GameObject.Find("Bottom_Floor").transform.position.y + 0.6f , transform.position.z);
 
 
