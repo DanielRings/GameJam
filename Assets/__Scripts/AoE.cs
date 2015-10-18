@@ -17,6 +17,7 @@ public class AoE : MonoBehaviour {
 
 	void OnCollisionEnter(Collision col)
     {
+		GetComponent<AudioSource> ().Play ();
         if (col.gameObject.CompareTag ("Player")) {
             BotPlayer.S.loseLife();
 		}
