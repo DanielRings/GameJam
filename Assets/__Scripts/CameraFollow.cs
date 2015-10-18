@@ -20,6 +20,8 @@ public class CameraFollow : MonoBehaviour {
 		else if (Input.GetKeyDown (KeyCode.Return)) {
 			//deal with Cutscene
 
+			GameObject gui = GameObject.Find("TutGUI");
+			gui.SetActive(false);
 			cutscene = false;
 		}
 
