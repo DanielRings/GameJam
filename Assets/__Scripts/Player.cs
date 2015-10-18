@@ -39,8 +39,6 @@ public class Player : MonoBehaviour {
 			transform.rotation = Quaternion.LookRotation (GetComponent<Rigidbody> ().velocity)* Quaternion.Euler(0, -90, 0);
 		}
 		else anim.SetBool ("Move", false);
-
-
 	}
 
     protected virtual void FixedUpdate()
