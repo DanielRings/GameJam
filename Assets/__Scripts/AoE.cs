@@ -18,19 +18,11 @@ public class AoE : MonoBehaviour {
 	void OnCollisionEnter(Collision col)
 	{
 		if (col.gameObject.CompareTag ("Player")) {
-			//Destroy (col.gameObject);
-			col.gameObject.SetActive(false);
-            playAgain();
+            BotPlayer.S.loseLife();
 		} 
 		else 
 		{
 			counter = 15;
 		}
 	}
-
-    void playAgain()
-    {
-        print("hit");
-        Application.LoadLevel("_Scene_1");
-    }
 }

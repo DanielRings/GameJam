@@ -4,6 +4,8 @@ public class BotPlayer : Player {
 
     public static BotPlayer S;
 
+    public int lives;
+
     public bool _____________________;
 
     private int numKeys;
@@ -18,6 +20,8 @@ public class BotPlayer : Player {
         downKey = KeyCode.S;
         leftKey = KeyCode.A;
         rightKey = KeyCode.D;
+
+        lives = 3;
 
         numKeys = 0;
 		KeyGUI.S.GetComponent<GUIText> ().text = "x " + numKeys.ToString ();
@@ -38,5 +42,20 @@ public class BotPlayer : Player {
     {
         numKeys -= num;
 		KeyGUI.S.GetComponent<GUIText> ().text = "x " + numKeys.ToString ();
+    }
+
+    public void loseLife()
+    {
+        lives--;
+        if(lives <= 0)
+        {
+            lives = 3;
+            Application.LoadLevel("_Scene_1");
+        }
+    }
+
+    public void gainLife()
+    {
+        lives++;
     }
 }
