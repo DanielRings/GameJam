@@ -12,6 +12,7 @@ public class BotPlayer : Player {
     protected override void Start()
     {
         base.Start();
+
         S = this;
         upKey = KeyCode.W;
         downKey = KeyCode.S;
@@ -19,11 +20,13 @@ public class BotPlayer : Player {
         rightKey = KeyCode.D;
 
         numKeys = 0;
+		KeyGUI.S.GetComponent<GUIText> ().text = "x " + numKeys.ToString ();
     }
 
     public void PickUpKey()
     {
         numKeys++;
+		KeyGUI.S.GetComponent<GUIText> ().text = "x " + numKeys.ToString ();
     }
 
     public bool HasKeys(int num)
@@ -34,5 +37,6 @@ public class BotPlayer : Player {
     public void UseKeys(int num)
     {
         numKeys -= num;
+		KeyGUI.S.GetComponent<GUIText> ().text = "x " + numKeys.ToString ();
     }
 }
