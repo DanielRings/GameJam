@@ -62,6 +62,9 @@ public class TopPlayer : Player {
 	void OnCollisionEnter(Collision col)
 	{
 		if (col.gameObject.CompareTag ("Ammo")) {
+			//PLAY SOUND
+			PickupSound.S.audio.Play();
+
 			ammo+=3;
 			col.gameObject.SetActive(false);
 		}
