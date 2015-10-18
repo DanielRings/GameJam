@@ -27,7 +27,7 @@ using System.Collections;
 			if(!audio.isPlaying)
 			{
 				audio.Play();
-				audio.Play(22050);
+				audio.Play(11025);
 			}
 		}
 	}
