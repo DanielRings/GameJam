@@ -25,10 +25,17 @@ public class AoE : MonoBehaviour {
 		if (col.gameObject.CompareTag ("Player")) {
 			//Destroy (col.gameObject);
 			col.gameObject.SetActive(false);
+            playAgain();
 		} 
 		else 
 		{
 			counter = 15;
 		}
 	}
+
+    void playAgain()
+    {
+        print("hit");
+        Application.LoadLevel("_Scene_1");
+    }
 }
