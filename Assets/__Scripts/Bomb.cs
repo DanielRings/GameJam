@@ -12,6 +12,7 @@ public class Bomb : MonoBehaviour {
     {
 		GameObject boom = Instantiate (AoE) as GameObject;
 		boom.transform.position = this.transform.position;
+		//boom.Explode ();
 		Destroy(gameObject);
     }
 }
