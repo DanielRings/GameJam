@@ -4,9 +4,14 @@ using System.Collections;
 public class Bomb : MonoBehaviour {
 
     public bool _________________;
+	public GameObject AoE; 
+
+
 
     void OnCollisionEnter(Collision col)
     {
-        Destroy(gameObject);
+		GameObject boom = Instantiate (AoE) as GameObject;
+		boom.transform.position = this.transform.position;
+		Destroy(gameObject);
     }
 }
