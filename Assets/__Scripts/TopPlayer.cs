@@ -9,7 +9,10 @@ public class TopPlayer : Player {
 	public GameObject targeting_sight ;
 	public KeyCode button = KeyCode.Space;
 	public GameObject sight ;
+	public Texture txtr;
+	public Texture original;
 
+	private int counter = 0;
 
 	public void Awake()
 	{
@@ -38,6 +41,12 @@ public class TopPlayer : Player {
 		Seagull_gui.S.GetComponent<GUIText>().text = "x " + ammo.ToString() ;
 		sight.transform.position = new Vector3 (transform.position.x, GameObject.Find("Bottom_Floor").transform.position.y + 0.6f , transform.position.z);
 
+		if (counter > 0)
+			counter--;
+		else 
+		{
+			Seagull_gui.S.GetComponent<GUITexture>().texture = original;
+		}
 
 		if (Input.GetKeyDown (button)) 
 		{
@@ -59,6 +68,9 @@ public class TopPlayer : Player {
 		{
 			GameObject Bomb = Instantiate (bullet) as GameObject;
 			ammo--;
+			Seagull_gui.S.GetComponent<GUITexture>().texture = txtr;
+			counter = 10;
+
 			Bomb.transform.position = new Vector3 (transform.position.x, transform.position.y - 3, transform.position.z);
             Bomb.GetComponent<Rigidbody>().velocity = new Vector3(0,-30,0);
 		}
