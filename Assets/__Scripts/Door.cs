@@ -9,17 +9,17 @@ public class Door : MonoBehaviour {
 
     private bool playerInRange = false;
 	
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.name == "Left_S")
+        if (col.gameObject == BotPlayer.S.gameObject)
         {
             playerInRange = true;
         }
     }
 
-    void OnCollisionExit(Collision col)
+    void OnTriggerExit(Collider col)
     {
-        if (col.gameObject.name == "Left_S")
+        if (col.gameObject == BotPlayer.S.gameObject)
         {
             playerInRange = false;
         }

@@ -6,7 +6,7 @@ public class BotPlayer : Player {
 
     public bool _____________________;
 
-    public int numKeys;
+    private int numKeys;
 
     // Use this for initialization
     protected override void Start()
