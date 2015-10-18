@@ -29,7 +29,6 @@ using System.Collections;
 			audio.volume = Random.Range(footAudioVol - volumeMod, footAudioVol + volumeMod);
 			if(!audio.isPlaying)
 			{
-				print("hit");
 				audio.Play();
 				audio.Play(13025);
 			}

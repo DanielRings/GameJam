@@ -8,6 +8,7 @@ public class CameraFollow : MonoBehaviour {
     public float xOffset;
     public float yOffset;
     public float zOffset;
+	private static bool flag = false;
 
     void LateUpdate()
     {
@@ -19,10 +20,14 @@ public class CameraFollow : MonoBehaviour {
 		} 
 		else if (Input.GetKeyDown (KeyCode.Return)) {
 			//deal with Cutscene
-
-			GameObject gui = GameObject.Find("TutGUI");
-			gui.SetActive(false);
+			
 			cutscene = false;
+			if (!flag)
+			{
+				flag = true;
+				GameObject gui = GameObject.Find("TutGUI");
+				gui.SetActive(false);
+			}
 		}
 
 
