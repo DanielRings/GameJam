@@ -42,6 +42,7 @@ public class TopPlayer : Player {
 		{
 			GameObject Bomb = Instantiate (bullet) as GameObject;
 			Bomb.transform.position = new Vector3 (transform.position.x, transform.position.y - 3, transform.position.z);
+            Bomb.GetComponent<Rigidbody>().velocity = new Vector3(0,-30,0);
 		}
 	}
 }
