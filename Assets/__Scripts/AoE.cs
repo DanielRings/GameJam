@@ -19,10 +19,7 @@ public class AoE : MonoBehaviour {
 	{
 		if (col.gameObject.CompareTag ("Player")) {
             BotPlayer.S.loseLife();
-		} 
-		else 
-		{
-			counter = 15;
 		}
+		counter = 15;
 	}
 }
