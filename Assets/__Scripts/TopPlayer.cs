@@ -48,7 +48,7 @@ public class TopPlayer : Player {
 			Seagull_gui.S.GetComponent<GUITexture>().texture = original;
 		}
 
-		if (Input.GetAxis(button)> 0 ) 
+		if (Input.GetButtonDown(button) ) 
 		{
 			Action();
 		}
@@ -57,7 +57,7 @@ public class TopPlayer : Player {
 	void OnCollisionEnter(Collision col)
 	{
 		if (col.gameObject.CompareTag ("Ammo")) {
-			ammo++;
+			ammo+=3;
 			col.gameObject.SetActive(false);
 		}
 	}
